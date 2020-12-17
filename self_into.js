@@ -42,6 +42,7 @@ $('.arrow_top').on('click',function(){
     // []←データなし
     }
     
+    console.log("data1");
     console.log(data);
     for (let displayText of data){
         add_li_tag(displayText);
@@ -63,6 +64,8 @@ let taskInput = document.querySelector('#input');
 
 // 配列に、入力された値を追加
 data.push(taskInput.value);
+console.log("data2");
+console.log(data);
 
 // localStrageに配列を保存
 // lcalStrage.setItem('キー','値');
@@ -92,6 +95,7 @@ function add_li_tag(task_text){
  // add_li.textContent = taskInput.value;
 // 生成したliタグの文字を、指定された文字にする　(text_task)
 add_li.textContent = task_text;
+console.log("add_li");
  console.log(add_li);
 
 
