@@ -11,7 +11,7 @@ $('.arrow_top').on('click',function(){
 
        
     
-// Q8 モーダル　Modal
+//  モーダル　Modal
 	// モーダル表示
 	// js-modalが押されたら２個が表示される
     $('.modal_open').on('click',function(){
