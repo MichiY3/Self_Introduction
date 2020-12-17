@@ -18,13 +18,17 @@
                 <div id="drower-bg" ></div>
                 <ul class="drower js-drower">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Favourites</a></li>
+                    <li><a href="#favourite_things">Favourites</a></li>
                     <li><a href="#main_text">About Me</a></li>
-                    <li><a href="#contents">Fabric & Food</a></li>
-                    <li><a href="#aside 2">Onword Journey</a></li>  
+                    <li><a href="#fabric">Fabric & Food</a></li>
+                    <li><a href="#journey">Onword Journey</a></li>  
                 </ul>
             </div>
         </nav>
+      
+        <div>
+            <span class="arrow_top"><img src="imgs/arrow_top.jpg"  alt="top"></span>
+        </div>
     </header>
 
     <main>
@@ -37,15 +41,26 @@
                 </div>
             </div>
             <section>
-                <ul>
-                    <li class="cloth"><a href="#aside 1"><img class="pic_saree" src="imgs/saree_tate.jpg" alt="Fabric"><p class="fabric_txt">Fabric</p></a></li>
-                    <li><a href="#aside 2"><img class="pic_travel" src="imgs/ururu.jpg" alt="Antelope Canyon"><p class="travel_txt">Travel</p></a></li>                  
+                <ul id="favourite_things">
+                    <li class="cloth"><a href="#fabric"><img class="pic_saree" src="imgs/saree_tate.jpg" alt="Fabric"><p class="fabric_txt">Fabric</p></a></li>
+                    <li><a href="#journey"><img class="pic_travel" src="imgs/ururu.jpg" alt="Antelope Canyon"><p class="travel_txt">Travel</p></a></li>                  
                     <li><a href="#food"><img class="pic_food" src="imgs/indian_food2.jpg" alt="Food"><p class="food_txt">Food</p></a></li>
-                    <li><img class="pic_siesta" src="imgs/hammock_sunset_small_filtered.jpg" alt="hammock at beach"><p class="siesta_txt">Siesta</p></li>
-                    
+                    <li class="modal_open"><img class="pic_siesta" src="imgs/hammock_sunset_small_filtered.jpg" alt="hammock at beach"><p class="siesta_txt">Siesta</p></li>
+                         <!--  Siesta モーダル  -->
+                         <div class="btn-wrapper modal-wrapper">
+                            <!-- <p class="btn js-modal">ボタン</p> -->
+                            <div class="modal-content">
+                            <span>Don't disturb...<br>
+                                お昼寝中<br>
+                                <span class="close-btn">×</span></span>
+                            </div>
+                            <div id="modal-bg" class="js-modal-close"></div>
+                        </div>
                     <li class="pic_panda" ><img src="imgs/panda10png.png" alt="panda_cub" class="fade">
                         <!-- <p class="animal_txt">Animal</p> -->
                     <img class="active" src="imgs/bear_Collage.png" alt="panda_cub"></li>
+                         
+       
                 </ul>
             
                 <div id="main_text">
@@ -59,70 +74,73 @@
                 </div>
             </section>  
         </article>
-        <aside id="contents">
-            <div id="aside 1">
-                <div class="story">
-                    <h2>Fabric</h2>
+        
+
+        <aside>
+        <div id="favourite_txt">
+            <div class="story">
+                <h2 id="fabric">Fabric</h2>
                     <hr>
-                    <!-- <p class="story_post">(WPで新着アイテムの紹介)</p> -->
-                    <ul>
-                        <li><img src="imgs/stole_1.jpg" alt="colourful_stoll"><p>ストールを見たらつい足が止まります。気づいたらどれにしようか真剣に悩んでいる。 　</p></li>
-                        <li><img src="imgs/saree_1.jpg" alt="saree"><p>いつかサリーを着てみたい！　</p></li>
-                        <li><img src="imgs/#" alt="kulta"><p>ムンバイの空港で見つけたクルター</p></li>
-                        <li><img src="imgs/#" alt="china dress"><p>ミニ丈のチャイナドレス。今着たらコスプレ。。。　</p></li>
-                        <li><img src="imgs/#" alt="Nepali_stole"><p>ネパールで買った厚手のストール。毛布みたいであったかい</p></li>
-                        
+                    <ul class="box">
+                        <li><img src="imgs/stole_1.jpg" alt="colourful_stoll"><p>ストールを見たらつい足が止まります。<br>気づいたらどれにしようか真剣に悩んでいる。 　</p></li>
+                        <li><img src="imgs/taiwan_fab.jpg" alt="chinese fabric"><p>台湾の生地やさんで見つけた布。ただただかわいい。</p></li>
+                        <li><img src="imgs/china_dress.jpg" alt="china dress"><p>中国っぽいボタンのかわいいミニ丈のチャイナドレス。<br>今着たらコスプレ。。。　</p></li>
+                        <li><img src="imgs/sarees.jpg" alt="saree"><p>いつかサリーを着てみたい！　</p></li>
+                        <li><img src="imgs/nepali_stole.jpg" alt="Nepali_stole"><p>ネパールで買った、刺繍のたくさん入った厚手のストール。<br>毛布みたいであったかい</p></li>  
                     </ul>
+                <h2 id="food">Food</h2>
+                <hr>
+                <ul>
+                    <li><img src="imgs/paella.jpg" alt="paella"><p>バルセロナの海沿いで食べたパエリア。美味しい！　</p></li>
+                    <li><img src="imgs/couscous.jpg" alt="couscous"><p>モロッコにクスクスを食べに行きたいです</p></li>
+                    <li><img src="imgs/sambar.jpg" alt="sambar"><p>旅先で出会った味はときどき家で再現してみます。<br>インドのサンバル</p></li>
+                    <li><img src="imgs/fho.png" alt="vietnamese noodle"><p>ベトナムのフォーは優しい味　</p></li>
+                    <li><img src="imgs/spice4.jpg" alt="spice"><p>入れるスパイスを変えるだけで、本場の味になると<br>信じています。</p></li>
+                    
+                </ul>  
+            </div>
+        <div id="journey">
+            <div class="storytravel">
+                <h2>Travel Diary</h2>
+                <hr>
+                <div class="travel_diary">
+                    <ul>
+                            <!-- <li><img src="imgs/tajimahal.jpg" alt="tajimahal"><p>念願のタージマハルを見にインドへ！</p></li>
+                            <li><img src="imgs/angkorwat.jpg" alt="angkorwat"><p>カンボジアのアンコールワット</p></li>
+                        </ul> -->
+                    
                 </div>
-                <div class="story">
-                    <h2 id="food">Food</h2>
-                    <hr>
-                    <!-- <p class="story_post">(WPで新着アイテムの紹介)</p> -->
-                    <ul>
-                        <li><img src="imgs/paella.jpg" alt="paella"><p>バルセロナの海沿いで食べたパエリア。美味しい！　</p></li>
-                        <li><img src="imgs/couscous.jpg" alt="couscous"><p>モロッコにクスクスを食べに行きたいです</p></li>
-                        <li><img src="imgs/sambar.jpg" alt="sambar"><p>旅先で出会った味はときどき家で再現してみます。<br>インドのサンバル</p></li>
-                        <li><img src="imgs/fho.png" alt="vietnamese noodle"><p>ベトナムのフォーは優しい味　</p></li>
-                        <li><img src="imgs/spice4.jpg" alt="spice"><p>入れるスパイスを変えるだけで、本場の味になると信じています。</p></li>
-                        <!-- <li><p class="read_more">Read More</p></li> -->
-                    </ul>
+            </div>
+            <div class="travel">
+                <h2>Onward Journey</h2>
+                <hr>
+                <div class="togo_list">
                 </div>
 
-            </div><!--  aside1 -->
-            <div id="aside 2">
-                <div class="item">
-                    <h2>Onward Journey</h2>
-                    <hr>
-                    <div class="item_list box">
-                        <p>Clothing</p>
-                        <ul class="form-group flex">
-                            <p class="cp_ipselect cp_sl01">
-                            <span class="input-field">
-                                <select>
-                                    <option value="1">&nbsp;</option>
-                                    <option value="2">Shirt</option>
-                                    <option value="3">Skirt</option>
-                                    <option value="4">Knit</option>
-                                    <option value="5">Stole</option>
-                                    <option value="6">Saree</option>
-                                </select>
-                         </span>
-                            </p>
-                        </ul>
-                    </div> 
-                </div>
-            </div> <!--  aside2 -->
+
+                <!-- <div class="item_list box">
+                    <p>Clothing</p>
+                    <ul class="form-group flex">
+                        <p class="cp_ipselect cp_sl01">
+                        <span class="input-field">
+                            <select>
+                                <option value="1">&nbsp;</option>
+                                <option value="6">Saree</option>
+                            </select>
+                        </span>
+                        </p>
+                    </ul>
+                </div> -->
+            </div>  
+        </div>
         </aside>
     </main>
 
     <footer>
         <p class="footer"> Copyrights ©︎ Asian Market All Rights Reserved.</p>
     </footer>
-
-
-
 </body>
-
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="self_into.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
